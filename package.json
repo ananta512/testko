@@ -1,16 +1,15 @@
 {
-  "name": "workspace",
+  "name": "mining-proxy",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",          // <‑‑‑ add this line
+  "main": "server.js",       // point to the actual file
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.5.0",
-    "ws": "^8.18.2"
+    "ws": "^8.12.0"
+  },
+  "engines": {               // optional but keeps Koyeb on 18 LTS
+    "node": ">=18.18.0"
   }
 }
