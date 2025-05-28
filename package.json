@@ -1,15 +1,15 @@
 {
   "name": "mining-proxy",
   "version": "1.0.0",
-  "type": "module",          // <‑‑‑ add this line
-  "main": "index.js",       // point to the actual file
+  "type": "module",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
     "ws": "^8.12.0"
   },
-  "engines": {               // optional but keeps Koyeb on 18 LTS
+  "engines": {
     "node": ">=18.18.0"
   }
 }
